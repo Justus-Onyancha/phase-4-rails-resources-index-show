@@ -78,8 +78,9 @@ Rails by hand, like so:
 # config/routes.rb
 
 Rails.application.routes.draw do
-  get '/birds', to: 'birds#index'
-  get '/birds/:id', to: 'birds#show'
+  # get '/birds', to: 'birds#index'
+  # get '/birds/:id', to: 'birds#show'
+  resources :birds
 end
 ```
 
